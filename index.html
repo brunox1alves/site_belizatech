@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beliza Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rubik&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rubik&display=swap" rel="stylesheet">
+
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+
+<body>
+    <div class="servicos-container">
+        <div class="titulo-container">
+            <a href="/index.html">
+                <div class="logo"></div>
+            </a>
+            <!-- Botões abaixo da logo -->
+            <div class="menu-inferior">
+   <!-- <a href="/html/trabalhe.html" class="botao-menu">Trabalhe Conosco</a>-->
+        <a href="/html/sobre.html" class="botao-menu">Sobre Nós</a>
+        <a href="/html/clientes.html" class="botao-menu">Clientes</a>
+
+    </div>
+    <!-- Logo arredondada -->
+                <h1></h1>
+            </div>
+
+
+        <section class="servicos">
+            <h2>Serviços Oferecidos</h2>
+
+            <div class="slider-container">
+                <div class="servico active" id="servico-1">
+                    <h3>Migração de Aplicações</h3>
+                    <p>Transfira seus sistemas para a nuvem com total segurança e escalabilidade.</p>
+                </div>
+
+                <div class="servico" id="servico-2">
+                    <h3>Administração de Banco de Dados</h3>
+                    <p>Gestão eficiente de bancos de dados, garantindo alta performance e segurança.</p>
+                </div>
+
+                <div class="servico" id="servico-3">
+                    <h3>Criação de Domínios</h3>
+                    <p>Registro de domínio personalizado e configuração completa de DNS.</p>
+                </div>
+
+                <div class="servico" id="servico-4">
+                    <h3>Hospedagem de Sites</h3>
+                    <p>Serviços de hospedagem rápidos, seguros e com suporte.</p>
+                </div>
+
+                <div class="servico" id="servico-5">
+                    <h3>Suporte Técnico Remoto</h3>
+                    <p>Assistência técnica à distância para resolver seus problemas rapidamente.</p>
+                </div>
+
+                <div class="servico" id="servico-6">
+                    <h3>Consultoria em TI</h3>
+                    <p>Consultoria estratégica para otimizar seus processos e tecnologia.</p>
+                </div>
+
+                <!-- Setas para navegação -->
+                <button class="seta esquerda" onclick="mudarServico(-1)">&#x25C0;</button> <!-- ◀ -->
+                <button class="seta direita" onclick="mudarServico(1)">&#x25B6;</button> <!-- ▶ -->
+
+            </div>
+        </section>
+
+        <section class="formulario">
+            <h2>Solicitar Proposta</h2>
+            <form method="post" action="/api/contato/enviar">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="servico">Serviço desejado:</label>
+                <input type="text" id="servico" name="servico" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar Solicitação</button>
+            </form>
+        </section>
+
+
+        <footer>
+            &copy; 2025 Beliza Tech. Todos os direitos reservados.
+        </footer>
+    </div>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="/js/site.js"></script>
+</body>
+
+</html>
